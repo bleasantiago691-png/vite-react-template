@@ -1,20 +1,46 @@
+/* Self-hosted fonts (Open Font License, subset to this card) — the card
+   styles itself with no outside requests, so it opens fast anywhere. */
+@font-face {
+	font-family: "Great Vibes";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("/fonts/great-vibes.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Cormorant Garamond";
+	font-style: normal;
+	font-weight: 300 700;
+	font-display: swap;
+	src: url("/fonts/cormorant-garamond.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Cormorant Garamond";
+	font-style: italic;
+	font-weight: 300 700;
+	font-display: swap;
+	src: url("/fonts/cormorant-garamond-italic.woff2") format("woff2");
+}
+
 :root {
-	--bg: #0c0e13;
-	--panel: #141821;
-	--panel-2: #191e29;
-	--field: #0e1118;
-	--line: #272d3d;
-	--line-soft: #20263a;
-	--text: #e9ebf3;
-	--muted: #8b91a5;
-	--gold: #d9a94e;
-	--gold-soft: #f0d48a;
-	--gold-deep: #b8872f;
-	--danger: #e5625c;
-	--ok: #3ecf8e;
-	--radius: 14px;
-	--font-ui: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
-	--font-display: "Fraunces", Georgia, "Times New Roman", serif;
+	--plum-950: #0d020c;
+	--plum-900: #19041a;
+	--plum-800: #2a0726;
+	--wine: #4d0f36;
+	--rose: #ff7aa5;
+	--rose-soft: #ffb3c9;
+	--blush: #ffe1ea;
+	--cream: #fffaf6;
+	--gold: #eec773;
+	--gold-soft: #ffe6ac;
+	--gold-deep: #b98a34;
+	--ink: #43212f;
+	--ink-soft: #6d4757;
+	--font-script: "Great Vibes", "Segoe Script", cursive;
+	--font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+	--font-ui: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
 * {
@@ -26,16 +52,26 @@ body,
 #root {
 	margin: 0;
 	padding: 0;
+	min-height: 100%;
+}
+
+html {
+	background: var(--plum-950);
 }
 
 body {
+	margin: 0;
 	font-family: var(--font-ui);
-	background: var(--bg);
-	color: var(--text);
-	font-size: 15px;
-	line-height: 1.5;
+	color: var(--cream);
+	background:
+		radial-gradient(120% 85% at 12% -10%, rgba(150, 24, 84, 0.75) 0%, rgba(150, 24, 84, 0) 55%),
+		radial-gradient(95% 70% at 92% 4%, rgba(214, 53, 106, 0.42) 0%, rgba(214, 53, 106, 0) 52%),
+		radial-gradient(90% 90% at 50% 112%, rgba(88, 12, 62, 0.85) 0%, rgba(88, 12, 62, 0) 62%),
+		linear-gradient(165deg, #26072a 0%, #14031a 55%, #0b020c 100%);
+	background-color: var(--plum-950);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
 }
 
 button,
@@ -54,5 +90,6 @@ p {
 }
 
 ::selection {
-	background: rgba(217, 169, 78, 0.35);
+	background: rgba(255, 122, 165, 0.35);
+	color: #fff;
 }
