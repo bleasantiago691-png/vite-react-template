@@ -1,0 +1,13 @@
+Fonts bundled with this card
+============================
+
+All three files are subsets of Google Fonts, released under the
+SIL Open Font License 1.1 (OFL). They were reduced to only the
+characters used on this page so the card loads instantly.
+
+  great-vibes.woff2              Great Vibes — Copyright (c) 2011 TypeSETit
+                                 https://fonts.google.com/specimen/Great+Vibes
+  cormorant-garamond.woff2       Cormorant Garamond — Copyright (c) 2015 Christian Thalmann
+  cormorant-garamond-italic.woff2  https://fonts.google.com/specimen/Cormorant+Garamond
+
+Full licence text: https://scripts.sil.org/OFL
